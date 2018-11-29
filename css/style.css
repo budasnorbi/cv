@@ -1,0 +1,411 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("../bootstrap/fonts/Roboto-Thin.woff") format('woff');
+    src: url("../bootstrap/fonts/Roboto-ThinItalic.woff") format('woff');
+    src: url("../bootstrap/fonts/Roboto-LightItalic.woff") format('woff');
+    src: url("../bootstrap/fonts/Roboto-Light.woff") format('woff');
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin:50px 0;
+    -webkit-animation: fadein 2.5s;
+    -moz-animation: fadein 2.5s;
+    -ms-animation: fadein 2.5s;
+    animation: fadein 2.5s;
+    background-color: #f8f8f8;
+}
+
+@keyframes fadein {
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+.selectDisable {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+::selection {
+    background-color: black; /* WebKit/Blink Browsers */
+    color:white
+}
+
+::-moz-selection {
+    background-color: black; /* WebKit/Blink Browsers */
+    color:white
+}
+
+::-webkit-scrollbar-track {  border-left:dotted 1px rgba(0,0,0,0.1)  }
+::-webkit-scrollbar{  width: 10px  }
+::-webkit-scrollbar-thumb {  background-color: #000000}
+
+@page {
+    size: A4;
+}
+
+#main{
+    border: dashed 1px rgba(0,0,0,0.2);
+
+    border-radius: 5px;
+    background-color: white;
+
+}
+
+.border-right{
+    border-right: dotted 1px rgba(0,0,0,0.3);
+}
+
+.border-left{
+    border-left: dotted 1px rgba(0,0,0,0.3);
+}
+
+.cv_author{
+    border:1px black solid;
+}
+
+.cv_author h1{
+    font-weight: 500;
+    margin:20px 0;
+}
+
+.cv_name p{
+    font-size: 16px;
+    width:91px;
+    margin:-13.5px auto 0px auto;
+    padding:0 10px;
+    background-color: white;
+    font-weight:500;
+}
+
+#cv_img{
+    margin: 50px auto;
+    width:160px;
+    height: 160px;
+    border-radius: 50%;
+    display: block;
+}
+
+.about_content{
+    text-align: right;
+    text-align-last: right;
+}
+
+.about_content h3{
+    margin:20px;
+}
+
+.about_content h4:nth-child(2){
+    margin-top:22px;
+}
+
+.about_content h4{
+    margin:10px 20px 10px 0px;
+
+}
+
+.about_story{
+    margin:20px 20px 20px 0;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+.experienced_content{
+    text-align: left;
+}
+
+.experienced_content h3{
+     margin:20px 20px 20px 15px;
+ }
+
+.skill_name{
+    margin:0px 0px 0px 20px;
+    padding: 0;
+    list-style: none;
+    font-weight: 500;
+    font-size: 16px ;
+}
+
+.skill_name >li:first-child{
+    margin-top: 0px;
+}
+
+.skill_name > li {
+    margin:12px 0;
+}
+
+.exp_bar{
+    width:100%;
+    height: 10px;
+    background-color: black;
+    opacity: 0.1;
+}
+
+.exped{
+    background-color: black;
+    height: 10px;
+    margin-top: -10px;
+}
+
+
+
+.line{
+    border:dotted 1px rgba(0,0,0,0.2);
+    margin:30px 0;
+}
+
+.icons{
+    margin: 0 auto;
+    display: block;
+    width: 60px;
+    height: 60px;
+}
+
+.icon-text{
+    text-align: center;
+    margin:10px 0;
+}
+
+.test{
+    margin : 52px 0;
+}
+
+.test2{
+    margin : 32px 0;
+}
+
+.english_skill{
+    margin:0;
+    padding: 0;
+    list-style: none;
+    font-weight: 500;
+    font-size: 16px ;
+}
+
+.english_skill > li {
+    margin:12px 0;
+
+}
+
+#car_box{
+    border:dotted 1px rgba(0,0,0,0.3);
+    border-radius: 2px;
+    padding: 30px 0;
+}
+
+#car_box img{
+    width:40px;
+    height: 40px;
+
+    margin:5px 0px 0px 30px;
+}
+
+#car_box img,#car_license{
+    float:left;
+}
+
+#car_license{
+    margin:8.7px 20px;
+}
+
+.footer{
+    text-align:center;
+}
+
+.footer_img_large{
+    width:50px;
+    height: 50px;
+}
+
+.footer_item_box{
+    margin:40px 0;
+}
+
+.footer_heading{
+    margin:40px 0px 0px 0px;
+}
+
+.footer_text{
+    text-align: center;
+    margin:10px 0;
+}
+
+.footer_img_small{
+    width:20px;
+    height: 20px;
+}
+
+.footer_link{
+    color:black;
+}
+
+.footer_link:hover{
+    color: black;
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (max-width: 1199px) {
+    .border-right{border:none}
+}
+
+@media (max-width: 991px) {
+    .experienced_content h3{
+        margin:20px 20px 20px 0px;
+    }
+    .border-left{border:none}
+    .about_content{
+        margin-top: 20px;
+        text-align: left;
+        text-align-last: left;
+    }
+
+    .about_content h3{
+        margin:20px 20px 20px 0px;
+    }
+    .about_content h4:nth-child(2){
+        margin-top:10px;
+        margin-bottom:20px;
+    }
+
+    .footer_img_large{
+        float: left;
+        width:50px;
+        height: 50px;
+    }
+    .footer_img_small{
+
+        margin:0 15px;
+        width: 50px;
+        height: 50px;
+        float: left;
+    }
+
+    .footer_text_large{
+        text-align: left;
+        font-size: 18px;
+        margin:16px 0px 16px 20px;
+        float: left;
+    }
+
+}
+
+@media (max-width:767px){
+    .footer_img_large{
+        float: left;
+        width:80px;
+        height: 80px;
+    }
+    .footer_img_small{
+
+        margin:0 15px;
+        width: 50px;
+        height: 50px;
+        float: left;
+    }
+
+    .footer_text_large{
+        text-align: right;
+        font-size: 18px;
+        margin:15.5px 0px 15.5px 20px;
+        float: left;
+    }
+
+
+    .footer_img_large{
+        width:50px;
+        height: 50px;
+        display: block;
+        margin:0 auto;
+    }
+
+}
+
+@media (max-width:481px){
+
+    .footer_img_large{
+        float: none;
+        width:50px;
+        height: 50px;
+        display: block;
+        margin:0 auto;
+    }
+    .footer_text_large{
+        text-align: center;
+        float:none;
+        margin:15px 0;
+    }
+
+
+}
+@media (max-width:435px){
+    #car_license{
+        float: none;
+        text-align: center;
+    }
+    #car_box img{
+        margin:0px auto;
+        display: block;
+        float: none;
+        width:40px;
+        height: 40px;
+    }
+
+    .footer_img_large{
+        float: none;
+        width:50px;
+        height: 50px;
+        display: block;
+        margin:0 auto;
+    }
+    .footer_text_large{
+        text-align: center;
+        float:none;
+        margin:15px 0;
+    }
+
+
+}
+
+@media print{
+
+    .cv_author{
+        border:1px black solid;
+    }
+
+    .cv_author h1{
+        font-weight: 500;
+        font-size: 30px;
+        margin:20px 0;
+    }
+
+    .cv_name p{
+        font-size: 18px;
+        width:91px;
+        margin:10px auto 0px auto;
+        padding:0 10px;
+        background-color: white;
+        font-weight:500;
+    }
+
+    .about_content{
+        text-align:left;
+        text-align-last: left;
+    }
+
+
+    .about_story{
+        margin:5px 20px 5px 0;
+        line-height: 30px;
+        font-weight: 500;
+        font-size:20px;
+    }
+
+    .line{
+        border:solid 1px rgba(0,0,0,0.1);
+        margin:5px 0;
+    }
+
+}
