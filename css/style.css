@@ -140,13 +140,14 @@ body{
 .exp_bar{
     width:100%;
     height: 10px;
-    background-color: black;
     border-radius: 5px;
-    opacity: 0.1;
+    background-color:rgba(0,0,0,.15);
+    z-index: -1;
 }
 
 .exped{
     background-color: black;
+    background: linear-gradient(90deg , #a17fe0, #a8c0ff);
     border-radius: 5px;
     height: 10px;
     margin-top: -10px;
