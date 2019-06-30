@@ -338,6 +338,11 @@ body {
 
 
 @media print {
+  *:last-child{
+    page-break-after: avoid;
+    page-break-inside: avoid;
+    margin-bottom: 0px;
+  }
   .cv_author {
     border:unset;
   }
