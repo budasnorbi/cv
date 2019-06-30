@@ -16,7 +16,11 @@
 <body>
   <div id="loading"><h1>Betöltés...</h1></div>
   <div class="container" id="main">
-
+    <div class="row" id="print-box">
+      <button type="button" class="print-cv">
+        Nyomtatás
+      </button>
+    </div>
     <div class="row">
       <div class="col-lg-4 col-lg-offset-4 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
 
@@ -86,7 +90,7 @@
         <!-- English -->
         <div class="left-box box-margin">
           <h3 class="box-title">ANGOL</h3>
-          <ul class="skill-list">
+          <ul class="skill-list language-skill">
             <li>Hallás utáni értés
               <div class="exp_bar"></div>
               <div class="exped exped-left" data-expereience-pct="55" style="width:0%"></div>
@@ -106,7 +110,7 @@
           </ul>
         </div>
 
-        <div class="left-box box-margin">
+        <div class="left-box box-margin hidden-print">
           <h3 class="box-title">PROJEKTEK</h3>
           <div class="projects-box">
             <a class="project-item" target="_blank" href="https://github.com/budasnorbi/ledroomNew">
@@ -136,6 +140,13 @@
             <a class="project-item private-project">
               Multi Screen Stream & Demand Video Player
             </a>
+          </div>
+        </div>
+
+        <div class="left-box box-margin visible-print">
+          <h3 class="box-title">PROJEKTEK</h3>
+          <div class="projects-box">
+            <p>Led Room, Web Sraper, Plank Calculator, Element Manager, Temperature Sensor, Chrome Css Path selector Extension, Minecraft Server Starter, World of Warcraft Npc scripts, Multi Screen Stream & Demand Video Player</p>
           </div>
         </div>
       </div>
@@ -281,10 +292,6 @@
             <div class="exp_bar"></div>
             <div class="exped exped-right" data-expereience-pct="35" style="width:0%"></div>
           </li>
-          <li>Adobe After Effects
-            <div class="exp_bar"></div>
-            <div class="exped exped-right" data-expereience-pct="30" style="width:0%"></div>
-          </li>
           <li>Ubuntu
             <div class="exp_bar"></div>
             <div class="exped exped-right" data-expereience-pct="75" style="width:0%"></div>
@@ -306,7 +313,7 @@
 
 
     <!-- Section - Footer -->
-    <div class="row hidden-sm hidden-xs">
+    <div class="row hidden-sm hidden-xs hidden-print">
       <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-xs-8 col-xs-offset-2 footer">
         <h3 class="footer_heading">KAPCSOLAT</h3>
 
@@ -339,8 +346,28 @@
       </div>
     </div>
 
-    <!-- SM - Section - Footer -->
-    <div class="row visible-sm visible-xs" style="margin-bottom: 50px;">
+
+    <div class="row col-lg-12 visible-print">
+      <div class="left-box box-margin">
+          <h3 class="box-title">KAPCSOLAT</h3>
+          <ul class="contact-box">
+            <li>
+                <img src="images/location.svg" draggable="false" class="footer-img-print" alt="location">
+                <p class="footer-text-print">Budapest</p>
+            </li>
+            <li>
+                <img src="images/mail.svg" draggable="false" class="footer-img-print" alt="mail">
+                <p class="footer-text-print">budasnorbert@gmail.com</p>
+            </li>
+            <li>
+                <img class="footer-img-print" target="_blank" draggable="false" src="images/github.svg" alt="github">
+                <p class="footer-text-print">github.com/budasnorbi</p>
+            </li>
+          </ul>
+      </div>
+    </div>
+
+    <div class="row visible-sm visible-xs hidden-print">
       <div class="col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2 footer" style="clear: both">
         <h2 class="footer_heading">KAPCSOLAT</h2>
 

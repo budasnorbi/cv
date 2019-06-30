@@ -5,6 +5,8 @@ window.addEventListener('load', e => {
   content.style.opacity = 1;
   document.body.removeChild(loading);
 
+  document.querySelector('.print-cv').addEventListener('click', e => window.print());
+
   const options = {
     root: null,
     rootMargin: '0px',
@@ -24,3 +26,4 @@ window.addEventListener('load', e => {
 
   [...document.querySelectorAll('.exped')].forEach( el => observer.observe(el));
 });
+
