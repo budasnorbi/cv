@@ -12,7 +12,7 @@ html {
   box-sizing: inherit;
 }
 
-a:visited, a:hover, a:active{
+a:visited, a:active{
   color:unset;
   text-decoration: none;
 }
@@ -30,6 +30,7 @@ time {
 
 @font-face {
   font-family: "Roboto";
+  src: url("../bootstrap/fonts/Roboto-Regular.woff") format("woff");
   src: url("../bootstrap/fonts/Roboto-Thin.woff") format("woff");
   src: url("../bootstrap/fonts/Roboto-ThinItalic.woff") format("woff");
   src: url("../bootstrap/fonts/Roboto-LightItalic.woff") format("woff");
@@ -71,6 +72,14 @@ body {
 
 @page {
   size: A4;
+}
+
+.list li time, .list li strong{
+  font-weight: bold !important;
+}
+
+.list li strong{
+  display: block;
 }
 
 .box-margin {
@@ -196,21 +205,52 @@ body {
 }
 
 .project-item{
+  position: relative;
   display: block;
   width:100%;
   margin-top:10px;
   padding:10px;
-  background: linear-gradient(-90deg, #a17fe0 25%, #a8c0ff);
+  background-image: linear-gradient(-90deg, #a17fe0 25%, #a8c0ff);
   color: white !important;
   border-radius:2.5px;
   font-size: 16px;
+  opacity: .8;
+
+  transition: opacity  .2s ease-in-out;
+}
+.project-item::before{
+  position: absolute;
+  content: '';
+  background-image: url('../images/github.svg');
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 22px;
+  width: 22px;
+  left: 10px;
+  top:10px;
+  filter: brightness(0%) invert(1);
+}
+
+.project-item:hover{
+  text-decoration: none;
+  opacity: 1;
+}
+
+.skill-group{
+  margin: 20px 0;
 }
 
 .private-project{
   background: unset;
   background-color:#7f8c8d;
-
+  opacity: 1;
   cursor: not-allowed;
+}
+
+.private-project::before{
+  background-image: none;
 }
 
 .exp_bar {
@@ -226,7 +266,7 @@ body {
   border-radius: 5px;
   height: 10px;
   margin-top: -10px;
-  transition: width .30s ease-in-out;
+  transition: width .45s ease-in-out;
 }
 
 .exped-right {
@@ -246,10 +286,14 @@ body {
 
 
 .skill-list {
+
   margin-bottom: 12px;
 }
+
+
+
 .skill-list > li {
-  margin-top: 12px;
+  margin-top: 15px;
 }
 
 .skill-list > li:first-child {
@@ -546,6 +590,13 @@ body {
     color: white !important;
     border-radius:2.5px;
     font-size: 16px;
+    text-decoration: none;
+    transition:  opacity .25s ease-in-out;
+    opacity: .75 !important;
+  }
+
+  .project-item:hover{
+    opacity: 1 !important;
   }
   
   .private-project{
