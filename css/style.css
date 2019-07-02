@@ -83,7 +83,7 @@ body {
 }
 
 .box-margin {
-  margin-bottom: 30px;
+  margin-bottom: 100px;
 }
 
 #main {
@@ -145,6 +145,7 @@ body {
   margin-left: auto;
 }
 
+
 .box > .about_story:last-child {
   margin-bottom: 0;
 }
@@ -161,6 +162,10 @@ body {
 .projects-box{
   overflow-y: auto;
   max-height: 574px;
+}
+
+.language-skill li{
+    display: block !important;
 }
 
 .print-cv{
@@ -239,7 +244,9 @@ body {
 }
 
 .skill-group{
-  margin: 20px 0;
+  width:80%;
+  margin: 30px 0px 15px 0px;
+  font-weight:bold;
 }
 
 .private-project{
@@ -284,16 +291,34 @@ body {
   margin: 30px auto;
 }
 
+.empty-img{
+  width: 25px;
+  height: 32px;
+}
+
 
 .skill-list {
 
   margin-bottom: 12px;
 }
 
-
-
 .skill-list > li {
+  display:flex;
   margin-top: 15px;
+}
+
+.skill-item-content{
+  flex-grow: 1;
+  margin-left:10px;
+}
+
+.skill-item-icon{
+  width: 25px;
+  height: 32px;
+
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 
 .skill-list > li:first-child {
@@ -655,12 +680,14 @@ body {
     flex-grow: 1;
   }
 
-  
+
 
   .language-skill{
+    
     justify-content: flex-start;
   }
   .language-skill li{
+
     margin-right:4%;
     flex-grow: 0 !important;
     flex-basis: 22% !important;
