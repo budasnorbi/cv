@@ -150,6 +150,61 @@ body {
   margin-bottom: 0;
 }
 
+.skill-rate {
+  position: relative;
+  margin-top: -10px;
+  height:10px;
+}
+
+.level-one, .level-two, .level-three, .level-four, .level-five{
+  position: absolute;
+  top:0;
+  height: 10px;
+  width:2px;
+  background-color:rgba(0, 0, 0, .25);
+}
+
+.exp-level-one{
+  width: 20%;
+}
+
+.exp-level-two{
+  width: 40%;
+}
+
+.exp-level-three{
+  width: 60%;
+}
+
+.exp-level-four{
+  width: 80%;
+}
+
+.exp-level-five{
+  width: 100%;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+
+
+
+.level-one{
+  left: calc(20%);
+}
+
+.level-two{
+  left: 40%;
+}
+
+.level-three{
+  left: 60%;
+}
+
+.level-four{
+  left: 80%;
+}
+
 .time {
   font-weight: bold;
 }
@@ -175,7 +230,7 @@ body {
   width:110px;
   height:30px;
 
- 
+
   padding: 5px;
   background-image: url('../images/print.svg');
   background-repeat: no-repeat;
@@ -270,7 +325,8 @@ body {
 
 .exped {
   background-color: black;
-  border-radius: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
   height: 10px;
   margin-top: -10px;
   transition: width .45s ease-in-out;
