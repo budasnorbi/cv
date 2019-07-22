@@ -91,7 +91,7 @@ body {
   transition: opacity .25s ease-in-out;
   box-shadow: 0 0 28px rgba(0,0,0,0.25);
   margin:50px auto;
-  border-radius:2.5px;
+  border-radius:5px;
 }
 
 .border-left {
@@ -110,7 +110,7 @@ body {
 
 .cv_name p {
   font-size: 16px;
-  width: 91px;
+  width: 41px;
   margin: -13.5px auto 0px auto;
   padding: 0 10px;
   background-color: #f8f8f8;
@@ -161,7 +161,7 @@ body {
   top:0;
   height: 10px;
   width:2px;
-  background-color:rgba(0, 0, 0, .25);
+  background-color:rgba(0, 0, 0, .15);
 }
 
 .exp-level-one{
@@ -186,11 +186,8 @@ body {
   border-bottom-right-radius: 5px;
 }
 
-
-
-
 .level-one{
-  left: calc(20%);
+  left: 20%;
 }
 
 .level-two{
@@ -223,6 +220,38 @@ body {
     display: block !important;
 }
 
+.language-skill .level-one{
+  left: unset;
+  right: calc((100 / 6) * 1%);
+}
+.language-skill .level-two{
+  left: unset;
+  right: calc((100 / 6) * 2%);
+}
+.language-skill .level-three{
+  left: unset;
+  right: calc((100 / 6) * 3%);
+}
+.language-skill .level-four{
+  left: unset;
+  right: calc((100 / 6) * 4%);
+}
+
+.language-skill .level-five{
+  right: calc((100 / 6) * 5%);
+}
+
+.skill-rate-description {
+  padding-left: 18px;
+  font-size: 16px;
+}
+
+.skill-rate-description li {
+  margin: 2px 0;
+}
+
+
+
 .print-cv{
   display:block;
   margin-left: auto;
@@ -240,8 +269,6 @@ body {
   background-color:transparent;
   border:none;
 
-
-  text-align: left;
   border-bottom: solid 1px transparent;
   opacity: .75;
 }
@@ -336,9 +363,49 @@ body {
   background: linear-gradient(90deg, #a17fe0, #a8c0ff);
 }
 
+.skill-list-desc-language li{
+  display: inline-block;
+  width:calc((100/6)*.95%);
+  text-align-last: center;
+}
+.skill-list-desc-programing{
+  width: 80%;
+  margin-left: 25px;
+  margin-top:22.5px;
+  display: flex;
+}
+.skill-list-desc-programing li{
+  display: inline-block;
+  flex-basis: 19%;
+  font-size: 14px;
+  text-align: center;
+  position: relative;
+}
+
+.skill-list-desc-programing li::before{
+    content: '*';
+    width: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -14px;
+    height: 5px;
+    border-radius: 50%;
+    /* background-color: black; */
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+}
+
 .exped-left {
   margin-left: auto;
   background: linear-gradient(90deg, #a8c0ff, #a17fe0);
+
+  border-top-left-radius: unset;
+  border-bottom-left-radius: unset;
+
+
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .line {
@@ -481,7 +548,7 @@ body {
 
   .cv_name p {
     font-size: 18px;
-    width: 91px;
+    width: 41px;
     margin: 10px auto 0px auto;
     padding: 0 10px;
     background-color: #f8f8f8;
@@ -557,7 +624,7 @@ body {
   
   .cv_name p {
     font-size: 10pt;
-    width: 91px;
+    width: 41px;
     margin: -13.5px auto 0px auto;
     padding: 0 10px;
     background-color: white;
@@ -713,6 +780,9 @@ body {
     margin-left: unset;
     background-image: linear-gradient(90deg, #a8c0ff, #a17fe0) !important;
     -webkit-print-color-adjust:exact !important;
+
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
   }
   
   .line {
