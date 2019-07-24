@@ -22,7 +22,7 @@
       </div>
     </div>
 
-    <div class="row">
+    <div class="row hidden-print">
       <div class="col-lg-4 col-lg-offset-4 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
 
         <div class="cv_author">
@@ -36,13 +36,20 @@
       </div>
     </div>
 
-    <div class="row">
+    <div class="row hidden-print">
       <div class="col-lg-2 col-lg-offset-5">
         <img src="images/profile3.jpg" draggable="false" class="selectDisable" id="cv_img" alt="profile">
       </div>
     </div>
 
-    <div class="row">
+    <div class="row print-cv-header visible-print">
+      <img src="images/profile3.jpg" draggable="false" class="selectDisable" id="cv_img" alt="profile">
+      <div class="cv_author">
+        <h1 class="text-center">BUDÁS NORBERT</h1>
+      </div>
+    </div>
+
+    <div class="row" id="all">
 
       <div class="col-lg-6 col-lg-offset-0 col-md-5 col-md-offset-1 cv_box about_content">
 
@@ -50,10 +57,9 @@
         <div class="left-box box-margin">
           <h3 class="box-title">ABOUT</h3>
           <p class="about_story">22 years old junior frontend developer</p>
-          <p class="about_story">I am a self-learner. I found many problems in my interests that i would like to solve with new technologies.<p>
+          <p class="about_story">I am a self-learner. I found many problems in my interests that I would like to solve with new technologies.<p>
           <p class="about_story">I like to learn new technologies to make higher quality and more maintainable code. Meeting and overcoming new challenges what really motivates me.</p>
-          <p class="about_story"> I like to discuss new technologies and various methods of their implementations with my colleagues and friends.
-          </p>
+          <p class="about_story"> I like to discuss new technologies and various methods of their implementations with my colleagues and friends.</p>
         </div>
 
         <!-- Carrier -->
@@ -83,7 +89,7 @@
             </li>
             <li>
               <time class="time">2011. 09. 01. – 2015. 06. 15.</time>
-              <p>Gépészeti and Számítástechnikai Secondary School - Mechanical Engineer (graduation)</p>
+              <p style="text-align: right;">Gépészeti and Számítástechnikai Secondary School - Mechanical Engineer (graduation)</p>
             </li>
           </ul>
         </div>
@@ -191,150 +197,156 @@
               Player</p>
           </div>
         </div>
+
+
+        <div class="left-box box-margin visible-print">
+          <h3 class="box-title">EXPERIENCES</h3>
+          <div>
+            <h4 class="skill-group" style="margin-top:5px;">Front-End JavaScript</h4>
+            <ul class="skill-list left-box">
+              <li>
+                <div class="skill-item-content">
+                  React
+                  <div class="exp_bar"></div>
+                  <div class="exped exped-left skill" style="width: 0%" data-expereience-stage="four"></div>
+                  <div class="skill-rate">
+                    <div class="level-one"></div>
+                    <div class="level-two"></div>
+                    <div class="level-three"></div>
+                    <div class="level-four"></div>
+                  </div>
+                </div>
+                <img class="skill-item-icon" src="./images/react-logo.svg"/>
+              </li>
+              <li>
+                
+                <div class="skill-item-content">
+                  Redux
+                  <div class="exp_bar"></div>
+                  <div class="exped exped-left skill" style="width: 0%" data-expereience-stage="three"></div>
+                  <div class="skill-rate">
+                    <div class="level-one"></div>
+                    <div class="level-two"></div>
+                    <div class="level-three"></div>
+                    <div class="level-four"></div>
+                  </div>
+                </div>
+                <img class="skill-item-icon" src="./images/redux.svg"/>
+              </li>
+              <li>    
+                <div class="skill-item-content">
+                  Redux-Saga
+                  <div class="exp_bar"></div>
+                  <div class="exped exped-left skill" style="width: 0%" data-expereience-stage="two"></div>
+                  <div class="skill-rate">
+                    <div class="level-one"></div>
+                    <div class="level-two"></div>
+                    <div class="level-three"></div>
+                    <div class="level-four"></div>
+                  </div>
+                </div>
+                <img class="skill-item-icon" src="./images/redux-saga.svg"/>
+              </li>
+              <li>
+                <div class="skill-item-content">
+                  Emotion (CSS in JS)
+                  <div class="exp_bar"></div>
+                  <div class="exped exped-left skill" style="width: 0%" data-expereience-stage="three"></div>
+                  <div class="skill-rate">
+                    <div class="level-one"></div>
+                    <div class="level-two"></div>
+                    <div class="level-three"></div>
+                    <div class="level-four"></div>
+                  </div>   
+                </div>
+                <img class="skill-item-icon" src="./images/emotion.png"/>
+              </li>
+              <li>
+                <div class="skill-item-content">
+                  Styled Components (CSS in JS)
+                  <div class="exp_bar"></div>
+                  <div class="exped exped-left skill" style="width: 0%" data-expereience-stage="three"></div>
+                  <div class="skill-rate">
+                    <div class="level-one"></div>
+                    <div class="level-two"></div>
+                    <div class="level-three"></div>
+                    <div class="level-four"></div>
+                  </div>
+                </div>
+                <img class="skill-item-icon" src="./images/styledcomponents.png"/>
+              </li>
+              <li>
+                <div class="skill-item-content">
+                  ECMAScript 6
+                  <div class="exp_bar"></div>
+                  <div class="exped exped-left skill" style="width: 0%" data-expereience-stage="four"></div>
+                  <div class="skill-rate">
+                    <div class="level-one"></div>
+                    <div class="level-two"></div>
+                    <div class="level-three"></div>
+                    <div class="level-four"></div>
+                  </div>
+                </div>
+                <img class="skill-item-icon" src="./images/javascript.svg"/>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
 
-      <!-- Experiences -->
-      <div class="col-lg-6 col-md-5 border-left experienced_content">
-        <h3 class="box-title">EXPERIENCES</h3>
-        <!-- Front-End JavaScript -->
+      <div class="col-lg-6 col-md-5 border-left experienced_content visible-print">
         <div>
-          <h4 class="skill-group" style="margin-top:5px;">Front-End JavaScript</h4>
           <ul class="skill-list right-box">
             <li>
-              <div class="skill-item-icon" style="background-image: url(./images/react-logo.svg)"></div>
-              <div class="skill-item-content">
-                React
-                <div class="exp_bar"></div>
-                <div class="exped exped-right" style="width: 0%" data-expereience-stage="four"></div>
-                <div class="skill-rate">
-                  <div class="level-one"></div>
-                  <div class="level-two"></div>
-                  <div class="level-three"></div>
-                  <div class="level-four"></div>
+                <img class="skill-item-icon" src="./images/materialui.svg"/>
+                <div class="skill-item-content">
+                  Material UI Framework
+                  <div class="exp_bar"></div>
+                  <div class="exped exped-right" style="width: 0%" data-expereience-stage="three"></div>
+                  <div class="skill-rate">
+                    <div class="level-one"></div>
+                    <div class="level-two"></div>
+                    <div class="level-three"></div>
+                    <div class="level-four"></div>
+                  </div>
                 </div>
-              </div>
-            </li>
-            <li>
-              <div class="skill-item-icon" style="background-image: url(./images/redux.svg)"></div>
-              <div class="skill-item-content">
-                Redux
-                <div class="exp_bar"></div>
-                <div class="exped exped-right" style="width: 0%" data-expereience-stage="three"></div>
-                <div class="skill-rate">
-                  <div class="level-one"></div>
-                  <div class="level-two"></div>
-                  <div class="level-three"></div>
-                  <div class="level-four"></div>
+              </li>
+              <li>
+                  <img class="skill-item-icon" style="height:7px;margin:12.5px 0;" src="./images/konva.png"/>
+                <div class="skill-item-content">
+                  Konva JS
+                  <div class="exp_bar"></div>
+                  <div class="exped exped-right" style="width: 0%" data-expereience-stage="two"></div>
+                  <div class="skill-rate">
+                    <div class="level-one"></div>
+                    <div class="level-two"></div>
+                    <div class="level-three"></div>
+                    <div class="level-four"></div>
+                  </div>
                 </div>
-              </div>
-            </li>
-            <li>
-              <div class="skill-item-icon" style="background-image: url(./images/redux-saga.svg)"></div>
-              <div class="skill-item-content">
-                Redux-Saga
-                <div class="exp_bar"></div>
-                <div class="exped exped-right" style="width: 0%" data-expereience-stage="two"></div>
-                <div class="skill-rate">
-                  <div class="level-one"></div>
-                  <div class="level-two"></div>
-                  <div class="level-three"></div>
-                  <div class="level-four"></div>
+              </li>
+              <li>
+                  <img class="skill-item-icon" style="height:13px;margin:9.5px 0;" src="./images/hlsjs.png"/>
+                <div class="skill-item-content">
+                  HTTP Live Streaming (hls.js)
+                  <div class="exp_bar"></div>
+                  <div class="exped exped-right" style="width: 0%" data-expereience-stage="three"></div>
+                  <div class="skill-rate">
+                    <div class="level-one"></div>
+                    <div class="level-two"></div>
+                    <div class="level-three"></div>
+                    <div class="level-four"></div>
+                  </div>
                 </div>
-              </div>
-            </li>
-            <li>
-              <div class="skill-item-icon" style="background-image: url(./images/emotion.png)"></div>
-              <div class="skill-item-content">
-                Emotion (CSS in JS)
-                <div class="exp_bar"></div>
-                <div class="exped exped-right" style="width: 0%" data-expereience-stage="three"></div>
-                <div class="skill-rate">
-                  <div class="level-one"></div>
-                  <div class="level-two"></div>
-                  <div class="level-three"></div>
-                  <div class="level-four"></div>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="skill-item-icon" style="background-image: url(./images/styledcomponents.png)"></div>
-              <div class="skill-item-content">
-                Styled Components (CSS in JS)
-                <div class="exp_bar"></div>
-                <div class="exped exped-right" style="width: 0%" data-expereience-stage="three"></div>
-                <div class="skill-rate">
-                  <div class="level-one"></div>
-                  <div class="level-two"></div>
-                  <div class="level-three"></div>
-                  <div class="level-four"></div>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="skill-item-icon" style="background-image: url(./images/materialui.svg)"></div>
-              <div class="skill-item-content">
-                Material UI Framework
-                <div class="exp_bar"></div>
-                <div class="exped exped-right" style="width: 0%" data-expereience-stage="three"></div>
-                <div class="skill-rate">
-                  <div class="level-one"></div>
-                  <div class="level-two"></div>
-                  <div class="level-three"></div>
-                  <div class="level-four"></div>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="skill-item-icon" style="background-image: url(./images/javascript.svg)"></div>
-              <div class="skill-item-content">
-                ECMAScript 6
-                <div class="exp_bar"></div>
-                <div class="exped exped-right" style="width: 0%" data-expereience-stage="four"></div>
-                <div class="skill-rate">
-                  <div class="level-one"></div>
-                  <div class="level-two"></div>
-                  <div class="level-three"></div>
-                  <div class="level-four"></div>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="skill-item-icon" style="background-image: url(./images/konva.png)"></div>
-              <div class="skill-item-content">
-                Konva JS
-                <div class="exp_bar"></div>
-                <div class="exped exped-right" style="width: 0%" data-expereience-stage="two"></div>
-                <div class="skill-rate">
-                  <div class="level-one"></div>
-                  <div class="level-two"></div>
-                  <div class="level-three"></div>
-                  <div class="level-four"></div>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="skill-item-icon" style="background-image: url(./images/hlsjs.png)"></div>
-              <div class="skill-item-content">
-                HTTP Live Streaming (hls.js)
-                <div class="exp_bar"></div>
-                <div class="exped exped-right" style="width: 0%" data-expereience-stage="three"></div>
-                <div class="skill-rate">
-                  <div class="level-one"></div>
-                  <div class="level-two"></div>
-                  <div class="level-three"></div>
-                  <div class="level-four"></div>
-                </div>
-              </div>
-            </li>
+              </li>
           </ul>
         </div>
-
         <!-- Back-End JavaScript & Php -->
         <div>
           <h4 class="skill-group">Back-End JavaScript & Php</h4>
           <ul class="skill-list right-box">
             <li class="skill-list-item">
-              <div class="skill-item-icon" style="background-image: url(./images/mern-stack.png)"></div>
+              <img class="skill-item-icon" style="height:25px; margin: 3.5px 0;" src="./images/mern-stack.png"/>
               <div class="skill-item-content">
                 MERN Stack
                 <div class="exp_bar"></div>
@@ -348,7 +360,7 @@
               </div>
             </li>
             <li class="skill-list-item">
-              <div class="skill-item-icon" style="background-image: url(./images/nodejs.svg)"></div>
+              <img class="skill-item-icon" src="./images/nodejs.svg"/>
               <div class="skill-item-content">
                 Node JS
                 <div class="exp_bar"></div>
@@ -362,7 +374,7 @@
               </div>
             </li>
             <li class="skill-list-item">
-              <div class="skill-item-icon" style="background-image: url(./images/mongodb.svg)"></div>
+              <img class="skill-item-icon" src="./images/mongodb.svg"/>
               <div class="skill-item-content">
                 Mongo DB
                 <div class="exp_bar"></div>
@@ -390,7 +402,7 @@
               </div>
             </li>
             <li class="skill-list-item">
-              <div class="skill-item-icon" style="background-image: url(./images/php.svg)"></div>
+              <img class="skill-item-icon" src="./images/php.svg"/>
               <div class="skill-item-content">
                 PHP
                 <div class="exp_bar"></div>
@@ -404,7 +416,7 @@
               </div>
             </li>
             <li class="skill-list-item">
-              <div class="skill-item-icon" style="background-image: url(./images/twig.png)"></div>
+              <img class="skill-item-icon" src="./images/twig.png"/>
               <div class="skill-item-content">
                 Twig
                 <div class="exp_bar"></div>
@@ -418,7 +430,7 @@
               </div>
             </li>
             <li>
-              <div class="skill-item-icon" style="background-image: url(./images/slim.png)"></div>
+              <img class="skill-item-icon" src="./images/slim.png"/>
               <div class="skill-item-content">
                 Slim
                 <div class="exp_bar"></div>
@@ -439,7 +451,7 @@
           <h4 class="skill-group">CSS</h4>
           <ul class="skill-list right-box">
             <li>
-              <div class="skill-item-icon" style="background-image: url(./images/css3.svg)"></div>
+              <img class="skill-item-icon" src="./images/css3.svg"/>
               <div class="skill-item-content">
                 CSS 3
                 <div class="exp_bar"></div>
@@ -453,7 +465,7 @@
               </div>
             </li>
             <li>
-              <div class="skill-item-icon" style="background-image: url(./images/sass.svg)"></div>
+              <img class="skill-item-icon" src="./images/sass.svg"/>
               <div class="skill-item-content">
                 Sass
                 <div class="exp_bar"></div>
@@ -467,7 +479,7 @@
               </div>
             </li>
             <li>
-              <div class="skill-item-icon" style="background-image: url(./images/bulma.png)"></div>
+              <img class="skill-item-icon" src="./images/bulma.png" style="width: 17px;height: 22px;margin: 5px 4px;"/>
               <div class="skill-item-content">
                 Bulma Framework
                 <div class="exp_bar"></div>
@@ -481,8 +493,7 @@
               </div>
             </li>
             <li>
-              <div class="skill-item-icon" style="background-image: url(./images/bootstrap.svg)"></div>
-
+              <img class="skill-item-icon" src="./images/bootstrap.svg"/>
               <div class="skill-item-content">
                 Bootstrap Framework
                 <div class="exp_bar"></div>
@@ -503,7 +514,7 @@
           <h4 class="skill-group">Conventions</h4>
           <ul class="skill-list right-box">
             <li>
-              <div class="skill-item-icon" style="background-image: url(./images/eslint.png)"></div>
+              <img class="skill-item-icon" src="./images/eslint.png" style="margin: 4.5px 0;"/>
               <div class="skill-item-content">
                 ESLint
                 <div class="exp_bar"></div>
@@ -517,7 +528,7 @@
               </div>
             </li>
             <li>
-              <div class="skill-item-icon" style="background-image: url(./images/airbnb.svg)"></div>
+              <img class="skill-item-icon" src="./images/airbnb.svg"/>
               <div class="skill-item-content">
                 Airbnb React/JSX Style Guide
                 <div class="exp_bar"></div>
@@ -531,7 +542,7 @@
               </div>
             </li>
             <li>
-              <div class="skill-item-icon" style="background-image: url(./images/bem.svg)"></div>
+              <img class="skill-item-icon" src="./images/bem.svg"/>
               <div class="skill-item-content">
                 BEM
                 <div class="exp_bar"></div>
@@ -552,7 +563,7 @@
           <h4 class="skill-group">Toolset</h4>
           <ul class="skill-list right-box">
             <li>
-              <div class="skill-item-icon" style="background-image: url(./images/git.png)"></div>
+              <img class="skill-item-icon" src="./images/git.png"/>
               <div class="skill-item-content">
                 Git
                 <div class="exp_bar"></div>
@@ -566,7 +577,7 @@
               </div>
             </li>
             <li>
-              <div class="skill-item-icon" style="background-image: url(./images/webpack.svg)"></div>
+              <img class="skill-item-icon" src="./images/webpack.svg"/>
               <div class="skill-item-content">
                 Webpack
                 <div class="exp_bar"></div>
@@ -580,7 +591,7 @@
               </div>
             </li>
             <li>
-              <div class="skill-item-icon" style="background-image: url(./images/babel.svg)"></div>
+              <img class="skill-item-icon" src="./images/babel.svg"/>
               <div class="skill-item-content">
                 Babel
                 <div class="exp_bar"></div>
@@ -594,7 +605,7 @@
               </div>
             </li>
             <li>
-              <div class="skill-item-icon" style="background-image: url(./images/gulp.svg)"></div>
+              <img class="skill-item-icon" src="./images/gulp.svg" style="height: 21px;"/>
               <div class="skill-item-content">
                 Gulp
                 <div class="exp_bar"></div>
@@ -615,7 +626,7 @@
           <h4 class="skill-group">Software</h4>
           <ul class="skill-list right-box">
             <li>
-              <div class="skill-item-icon" style="background-image: url(./images/photoshop.svg)"></div>
+              <img class="skill-item-icon" src="./images/photoshop.svg"/>
               <div class="skill-item-content">
                 Adobe Photoshop
                 <div class="exp_bar"></div>
@@ -629,49 +640,7 @@
               </div>
             </li>
             <li>
-              <div class="skill-item-icon" style="background-image: url(./images/illustrator.svg)"></div>
-              <div class="skill-item-content">
-                Adobe Illustrator
-                <div class="exp_bar"></div>
-                <div class="exped exped-right" style="width: 0%" data-expereience-stage="two"></div>
-                <div class="skill-rate">
-                  <div class="level-one"></div>
-                  <div class="level-two"></div>
-                  <div class="level-three"></div>
-                  <div class="level-four"></div>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="skill-item-icon" style="background-image: url(./images/aftereffetcs.svg)"></div>
-              <div class="skill-item-content">
-                Adobe After Effects
-                <div class="exp_bar"></div>
-                <div class="exped exped-right" style="width: 0%" data-expereience-stage="two"></div>
-                <div class="skill-rate">
-                  <div class="level-one"></div>
-                  <div class="level-two"></div>
-                  <div class="level-three"></div>
-                  <div class="level-four"></div>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="skill-item-icon" style="background-image: url(./images/xd.svg)"></div>
-              <div class="skill-item-content">
-                Adobe Experience Design
-                <div class="exp_bar"></div>
-                <div class="exped exped-right" style="width: 0%" data-expereience-stage="two"></div>
-                <div class="skill-rate">
-                  <div class="level-one"></div>
-                  <div class="level-two"></div>
-                  <div class="level-three"></div>
-                  <div class="level-four"></div>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="skill-item-icon" style="background-image: url(./images/ubuntu.svg)"></div>
+              <img class="skill-item-icon" src="./images/ubuntu.svg"/>
               <div class="skill-item-content">
                 Ubuntu
                 <div class="exp_bar"></div>
@@ -685,7 +654,506 @@
               </div>
             </li>
             <li>
-              <div class="skill-item-icon" style="background-image: url(./images/macos.svg)"></div>
+              <img class="skill-item-icon" src="./images/macos.svg"/>
+              <div class="skill-item-content">
+                macOS
+                <div class="exp_bar"></div>
+                <div class="exped exped-right" style="width: 0%" data-expereience-stage="four"></div>
+                <div class="skill-rate">
+                  <div class="level-one"></div>
+                  <div class="level-two"></div>
+                  <div class="level-three"></div>
+                  <div class="level-four"></div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <ul class="skill-list-desc-programing">
+          <li>Fundamental Awareness (basic knowledge)</li>
+          <li>Novice (limited experience)</li>
+          <li>Intermediate (practical application)</li>
+          <li>Advanced (applied theory)</li>
+          <li>Expert (recognized authority)</li>
+        </ul>
+
+        <div class="row visible-print">
+          <div class="col-lg-12 footer">
+            <h3 class="box-title" style="display: block; width: fit-content;">CONTACT</h3>
+              <div>
+
+                <div class="footer_item_box">
+                    <img src="images/mail.svg" draggable="false" class="footer_img_large" alt="mail">
+                    <p class="footer_text">budasnorbert@gmail.com</p>
+                </div>
+
+                  <div class="footer_item_box">
+                    <img class="footer_img_large" draggable="false" src="images/github.svg" alt="github">
+                    <p class="footer_text">budasnorbi</p>
+                  </div>
+
+                  <div class="footer_item_box">
+                    <img class="footer_img_large" draggable="false" src="images/linkedin.png" alt="github">
+                    <p class="footer_text">budasnorbi</p>
+                  </div>
+              </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Experiences -->
+      <div class="col-lg-6 col-md-5 border-left experienced_content hidden-print">
+        <h3 class="box-title">EXPERIENCES</h3>
+        <!-- Front-End JavaScript -->
+        <div>
+          <h4 class="skill-group" style="margin-top:5px;">Front-End JavaScript</h4>
+          <ul class="skill-list right-box">
+            <li>
+              <img class="skill-item-icon" src="./images/react-logo.svg"/>
+              <div class="skill-item-content">
+                React
+                <div class="exp_bar"></div>
+                <div class="exped exped-right" style="width: 0%" data-expereience-stage="four"></div>
+                <div class="skill-rate">
+                  <div class="level-one"></div>
+                  <div class="level-two"></div>
+                  <div class="level-three"></div>
+                  <div class="level-four"></div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <img class="skill-item-icon" src="./images/redux.svg"/>
+              <div class="skill-item-content">
+                Redux
+                <div class="exp_bar"></div>
+                <div class="exped exped-right" style="width: 0%" data-expereience-stage="three"></div>
+                <div class="skill-rate">
+                  <div class="level-one"></div>
+                  <div class="level-two"></div>
+                  <div class="level-three"></div>
+                  <div class="level-four"></div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <img class="skill-item-icon" src="./images/redux-saga.svg"/>
+              <div class="skill-item-content">
+                Redux-Saga
+                <div class="exp_bar"></div>
+                <div class="exped exped-right" style="width: 0%" data-expereience-stage="two"></div>
+                <div class="skill-rate">
+                  <div class="level-one"></div>
+                  <div class="level-two"></div>
+                  <div class="level-three"></div>
+                  <div class="level-four"></div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <img class="skill-item-icon" src="./images/emotion.png"/>
+              <div class="skill-item-content">
+                Emotion (CSS in JS)
+                <div class="exp_bar"></div>
+                <div class="exped exped-right" style="width: 0%" data-expereience-stage="three"></div>
+                <div class="skill-rate">
+                  <div class="level-one"></div>
+                  <div class="level-two"></div>
+                  <div class="level-three"></div>
+                  <div class="level-four"></div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <img class="skill-item-icon" src="./images/styledcomponents.png"/>
+              <div class="skill-item-content">
+                Styled Components (CSS in JS)
+                <div class="exp_bar"></div>
+                <div class="exped exped-right" style="width: 0%" data-expereience-stage="three"></div>
+                <div class="skill-rate">
+                  <div class="level-one"></div>
+                  <div class="level-two"></div>
+                  <div class="level-three"></div>
+                  <div class="level-four"></div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <img class="skill-item-icon" src="./images/materialui.svg"/>
+              <div class="skill-item-content">
+                Material UI Framework
+                <div class="exp_bar"></div>
+                <div class="exped exped-right" style="width: 0%" data-expereience-stage="three"></div>
+                <div class="skill-rate">
+                  <div class="level-one"></div>
+                  <div class="level-two"></div>
+                  <div class="level-three"></div>
+                  <div class="level-four"></div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <img class="skill-item-icon" src="./images/javascript.svg"/>
+              <div class="skill-item-content">
+                ECMAScript 6
+                <div class="exp_bar"></div>
+                <div class="exped exped-right" style="width: 0%" data-expereience-stage="four"></div>
+                <div class="skill-rate">
+                  <div class="level-one"></div>
+                  <div class="level-two"></div>
+                  <div class="level-three"></div>
+                  <div class="level-four"></div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <img class="skill-item-icon" style="height:7px;margin:12.5px 0;" src="./images/konva.png"/>
+              <div class="skill-item-content">
+                Konva JS
+                <div class="exp_bar"></div>
+                <div class="exped exped-right" style="width: 0%" data-expereience-stage="two"></div>
+                <div class="skill-rate">
+                  <div class="level-one"></div>
+                  <div class="level-two"></div>
+                  <div class="level-three"></div>
+                  <div class="level-four"></div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <img class="skill-item-icon" style="height:13px;margin:9.5px 0;" src="./images/hlsjs.png"/>
+              <div class="skill-item-content">
+                HTTP Live Streaming (hls.js)
+                <div class="exp_bar"></div>
+                <div class="exped exped-right" style="width: 0%" data-expereience-stage="three"></div>
+                <div class="skill-rate">
+                  <div class="level-one"></div>
+                  <div class="level-two"></div>
+                  <div class="level-three"></div>
+                  <div class="level-four"></div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Back-End JavaScript & Php -->
+        <div>
+          <h4 class="skill-group">Back-End JavaScript & Php</h4>
+          <ul class="skill-list right-box">
+            <li class="skill-list-item">
+              <img class="skill-item-icon" style="height:25px; margin: 3.5px 0;" src="./images/mern-stack.png"/>
+              <div class="skill-item-content">
+                MERN Stack
+                <div class="exp_bar"></div>
+                <div class="exped exped-right" style="width: 0%" data-expereience-stage="two"></div>
+                <div class="skill-rate">
+                  <div class="level-one"></div>
+                  <div class="level-two"></div>
+                  <div class="level-three"></div>
+                  <div class="level-four"></div>
+                </div>
+              </div>
+            </li>
+            <li class="skill-list-item">
+              <img class="skill-item-icon" src="./images/nodejs.svg"/>
+              <div class="skill-item-content">
+                Node JS
+                <div class="exp_bar"></div>
+                <div class="exped exped-right" style="width: 0%" data-expereience-stage="two"></div>
+                <div class="skill-rate">
+                  <div class="level-one"></div>
+                  <div class="level-two"></div>
+                  <div class="level-three"></div>
+                  <div class="level-four"></div>
+                </div>
+              </div>
+            </li>
+            <li class="skill-list-item">
+              <img class="skill-item-icon" src="./images/mongodb.svg"/>
+              <div class="skill-item-content">
+                Mongo DB
+                <div class="exp_bar"></div>
+                <div class="exped exped-right" style="width: 0%" data-expereience-stage="one"></div>
+                <div class="skill-rate">
+                  <div class="level-one"></div>
+                  <div class="level-two"></div>
+                  <div class="level-three"></div>
+                  <div class="level-four"></div>
+                </div>
+              </div>
+            </li>
+            <li class="skill-list-item">
+              <div class="empty-img"></div>
+              <div class="skill-item-content">
+                Express JS
+                <div class="exp_bar"></div>
+                <div class="exped exped-right" style="width: 0%" data-expereience-stage="two"></div>
+                <div class="skill-rate">
+                  <div class="level-one"></div>
+                  <div class="level-two"></div>
+                  <div class="level-three"></div>
+                  <div class="level-four"></div>
+                </div>
+              </div>
+            </li>
+            <li class="skill-list-item">
+              <img class="skill-item-icon" src="./images/php.svg"/>
+              <div class="skill-item-content">
+                PHP
+                <div class="exp_bar"></div>
+                <div class="exped exped-right" style="width: 0%" data-expereience-stage="one"></div>
+                <div class="skill-rate">
+                  <div class="level-one"></div>
+                  <div class="level-two"></div>
+                  <div class="level-three"></div>
+                  <div class="level-four"></div>
+                </div>
+              </div>
+            </li>
+            <li class="skill-list-item">
+              <img class="skill-item-icon" src="./images/twig.png"/>
+              <div class="skill-item-content">
+                Twig
+                <div class="exp_bar"></div>
+                <div class="exped exped-right" style="width: 0%" data-expereience-stage="one"></div>
+                <div class="skill-rate">
+                  <div class="level-one"></div>
+                  <div class="level-two"></div>
+                  <div class="level-three"></div>
+                  <div class="level-four"></div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <img class="skill-item-icon" src="./images/slim.png"/>
+              <div class="skill-item-content">
+                Slim
+                <div class="exp_bar"></div>
+                <div class="exped exped-right" style="width: 0%" data-expereience-stage="one"></div>
+                <div class="skill-rate">
+                  <div class="level-one"></div>
+                  <div class="level-two"></div>
+                  <div class="level-three"></div>
+                  <div class="level-four"></div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- CSS -->
+        <div>
+          <h4 class="skill-group">CSS</h4>
+          <ul class="skill-list right-box">
+            <li>
+              <img class="skill-item-icon" src="./images/css3.svg"/>
+              <div class="skill-item-content">
+                CSS 3
+                <div class="exp_bar"></div>
+                <div class="exped exped-right" style="width: 0%" data-expereience-stage="three"></div>
+                <div class="skill-rate">
+                  <div class="level-one"></div>
+                  <div class="level-two"></div>
+                  <div class="level-three"></div>
+                  <div class="level-four"></div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <img class="skill-item-icon" src="./images/sass.svg"/>
+              <div class="skill-item-content">
+                Sass
+                <div class="exp_bar"></div>
+                <div class="exped exped-right" style="width: 0%" data-expereience-stage="three"></div>
+                <div class="skill-rate">
+                  <div class="level-one"></div>
+                  <div class="level-two"></div>
+                  <div class="level-three"></div>
+                  <div class="level-four"></div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <img class="skill-item-icon" src="./images/bulma.png"/>
+              <div class="skill-item-content">
+                Bulma Framework
+                <div class="exp_bar"></div>
+                <div class="exped exped-right" style="width: 0%" data-expereience-stage="three"></div>
+                <div class="skill-rate">
+                  <div class="level-one"></div>
+                  <div class="level-two"></div>
+                  <div class="level-three"></div>
+                  <div class="level-four"></div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <img class="skill-item-icon" src="./images/bootstrap.svg"/>
+              <div class="skill-item-content">
+                Bootstrap Framework
+                <div class="exp_bar"></div>
+                <div class="exped exped-right" style="width: 0%" data-expereience-stage="three"></div>
+                <div class="skill-rate">
+                  <div class="level-one"></div>
+                  <div class="level-two"></div>
+                  <div class="level-three"></div>
+                  <div class="level-four"></div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Konvenciók -->
+        <div>
+          <h4 class="skill-group">Conventions</h4>
+          <ul class="skill-list right-box">
+            <li>
+              <img class="skill-item-icon" src="./images/eslint.png"/>
+              <div class="skill-item-content">
+                ESLint
+                <div class="exp_bar"></div>
+                <div class="exped exped-right" style="width: 0%" data-expereience-stage="three"></div>
+                <div class="skill-rate">
+                  <div class="level-one"></div>
+                  <div class="level-two"></div>
+                  <div class="level-three"></div>
+                  <div class="level-four"></div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <img class="skill-item-icon" src="./images/airbnb.svg"/>
+              <div class="skill-item-content">
+                Airbnb React/JSX Style Guide
+                <div class="exp_bar"></div>
+                <div class="exped exped-right" style="width: 0%" data-expereience-stage="three"></div>
+                <div class="skill-rate">
+                  <div class="level-one"></div>
+                  <div class="level-two"></div>
+                  <div class="level-three"></div>
+                  <div class="level-four"></div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <img class="skill-item-icon" src="./images/bem.svg"/>
+              <div class="skill-item-content">
+                BEM
+                <div class="exp_bar"></div>
+                <div class="exped exped-right" style="width: 0%" data-expereience-stage="two"></div>
+                <div class="skill-rate">
+                  <div class="level-one"></div>
+                  <div class="level-two"></div>
+                  <div class="level-three"></div>
+                  <div class="level-four"></div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Eszközkészlet -->
+        <div>
+          <h4 class="skill-group">Toolset</h4>
+          <ul class="skill-list right-box">
+            <li>
+              <img class="skill-item-icon" src="./images/git.png"/>
+              <div class="skill-item-content">
+                Git
+                <div class="exp_bar"></div>
+                <div class="exped exped-right" style="width: 0%" data-expereience-stage="two"></div>
+                <div class="skill-rate">
+                  <div class="level-one"></div>
+                  <div class="level-two"></div>
+                  <div class="level-three"></div>
+                  <div class="level-four"></div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <img class="skill-item-icon" src="./images/webpack.svg"/>
+              <div class="skill-item-content">
+                Webpack
+                <div class="exp_bar"></div>
+                <div class="exped exped-right" style="width: 0%" data-expereience-stage="three"></div>
+                <div class="skill-rate">
+                  <div class="level-one"></div>
+                  <div class="level-two"></div>
+                  <div class="level-three"></div>
+                  <div class="level-four"></div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <img class="skill-item-icon" src="./images/babel.svg"/>
+              <div class="skill-item-content">
+                Babel
+                <div class="exp_bar"></div>
+                <div class="exped exped-right" style="width: 0%" data-expereience-stage="three"></div>
+                <div class="skill-rate">
+                  <div class="level-one"></div>
+                  <div class="level-two"></div>
+                  <div class="level-three"></div>
+                  <div class="level-four"></div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <img class="skill-item-icon" src="./images/gulp.svg"/>
+              <div class="skill-item-content">
+                Gulp
+                <div class="exp_bar"></div>
+                <div class="exped exped-right" style="width: 0%" data-expereience-stage="two"></div>
+                <div class="skill-rate">
+                  <div class="level-one"></div>
+                  <div class="level-two"></div>
+                  <div class="level-three"></div>
+                  <div class="level-four"></div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Szoftverek -->
+        <div>
+          <h4 class="skill-group">Software</h4>
+          <ul class="skill-list right-box">
+            <li>
+              <img class="skill-item-icon" src="./images/photoshop.svg"/>
+              <div class="skill-item-content">
+                Adobe Photoshop
+                <div class="exp_bar"></div>
+                <div class="exped exped-right" style="width: 0%" data-expereience-stage="three"></div>
+                <div class="skill-rate">
+                  <div class="level-one"></div>
+                  <div class="level-two"></div>
+                  <div class="level-three"></div>
+                  <div class="level-four"></div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <img class="skill-item-icon" src="./images/ubuntu.svg"/>
+              <div class="skill-item-content">
+                Ubuntu
+                <div class="exp_bar"></div>
+                <div class="exped exped-right" style="width: 0%" data-expereience-stage="four"></div>
+                <div class="skill-rate">
+                  <div class="level-one"></div>
+                  <div class="level-two"></div>
+                  <div class="level-three"></div>
+                  <div class="level-four"></div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <img class="skill-item-icon" src="./images/macos.svg"/>
               <div class="skill-item-content">
                 macOS
                 <div class="exp_bar"></div>
@@ -724,14 +1192,8 @@
         <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-xs-8 col-xs-offset-2 footer">
           <h3 class="footer_heading">CONTACT</h3>
 
-          <div class="col-lg-3 col-md-3">
-            <div class="footer_item_box">
-              <img src="images/location.svg" draggable="false" class="footer_img_large" alt="location">
-              <p class="footer_text">Budapest</p>
-            </div>
-          </div>
 
-          <div class="col-lg-3 col-md-3">
+          <div class="col-lg-4 col-md-4">
             <div class="footer_item_box">
               <a class="footer_link" href="mailto:budasnorbert@gmail.com">
                 <img src="images/mail.svg" draggable="false" class="footer_img_large" alt="mail">
@@ -740,16 +1202,16 @@
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-3">
+          <div class="col-lg-4 col-md-4">
             <a class="footer_link" href="https://www.github.com/budasnorbi">
               <div class="footer_item_box">
                 <img class="footer_img_large" draggable="false" src="images/github.svg" alt="github">
-                <p class="footer_text">github.com/budasnorbi</p>
+                <p class="footer_text">/budasnorbi</p>
               </div>
             </a>
           </div>
 
-          <div class="col-lg-3 col-md-3">
+          <div class="col-lg-4 col-md-4">
             <a class="footer_link" href="https://www.linkedin.com/in/norbert-bud%C3%A1s-3aa391138/">
               <div class="footer_item_box">
                 <img class="footer_img_large" draggable="false" src="images/linkedin.png" alt="github">
@@ -762,75 +1224,7 @@
       </div>
 
 
-      <div class="row col-lg-12 visible-print x">
-        <div class="left-box box-margin">
-          <h3 class="box-title">KAPCSOLAT</h3>
-          <ul class="contact-box">
-            <li>
-              <img src="images/location.svg" draggable="false" class="footer-img-print" alt="location">
-              <p class="footer-text-print">Budapest</p>
-            </li>
-            <li>
-              <img src="images/mail.svg" draggable="false" class="footer-img-print" alt="mail">
-              <p class="footer-text-print">budasnorbert@gmail.com</p>
-            </li>
-            <li>
-              <img class="footer-img-print" target="_blank" draggable="false" src="images/github.svg" alt="github">
-              <p class="footer-text-print">github.com/budasnorbi</p>
-            </li>
-          </ul>
-        </div>
-      </div>
 
-      <div class="row visible-sm visible-xs hidden-print">
-        <div class="col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2 footer" style="clear: both">
-          <h2 class="footer_heading">KAPCSOLAT</h2>
-
-          <div class="row">
-            <div class="col-sm-12">
-              <div class="footer_item_box">
-                <img src="images/location.svg" draggable="false" class="footer_img_large" alt="location">
-                <p class="footer_text_large">Budapest</p>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="row">
-            <div class="col-sm-12">
-              <a class="footer_link" href="mailto:budasnorbert@gmail.com">
-                <div class="footer_item_box">
-                  <img src="images/mail.svg" draggable="false" class="footer_img_large" alt="mail">
-                  <p class="footer_text_large">budasnorbert@gmail.com</p>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-sm-12">
-              <a class="footer_link" href="https://www.github.com/budasnorbi">
-                <div class="footer_item_box">
-                  <img class="footer_img_large" target="_blank" draggable="false" src="images/github.svg" alt="github">
-                  <p class="footer_text_large">github.com/budasnorbi</p>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-sm-12">
-              <a class="footer_link" href="https://www.linkedin.com/in/norbert-bud%C3%A1s-3aa391138/">
-                <div class="footer_item_box">
-                  <img class="footer_img_large" draggable="false" src="images/linkedin.png" alt="github">
-                  <p class="footer_text">budasnorbi</p>
-                </div>
-              </a>
-            </div>
-          </div>
-
-        </div>
-      </div>
 
     </div>
 </body>

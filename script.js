@@ -55,6 +55,10 @@ window.addEventListener('load', e => {
       .filter( entry => entry.isIntersecting)
       .forEach( observerEntry => {
         console.log(observerEntry.target.className)
+
+
+
+        
         if(observerEntry.target.className === 'exped exped-left'){
           if(observerEntry.target.style.width === '0%'){
             const stage = observerEntry.target.getAttribute('data-expereience-stage');
