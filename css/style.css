@@ -83,7 +83,7 @@ body {
 }
 
 .box-margin {
-  margin-bottom: 100px;
+  margin-bottom: 75px;
 }
 
 #main {
@@ -208,7 +208,7 @@ body {
 
 .box-title {
   display: inline-block;
-  border-bottom-style: solid;
+  border-bottom: solid 2px black;
 }
 
 .projects-box{
@@ -704,6 +704,7 @@ body {
     background-color: rgba(0, 0, 0, .15) !important;
     -webkit-print-color-adjust:exact !important;
     height:5px;
+    width:1px;
   }
 
   .exp_bar{

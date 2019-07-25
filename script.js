@@ -49,16 +49,31 @@ window.addEventListener('load', e => {
       }
     }
   };
+
+  window.onbeforeprint = (e) => {
+    [...document.querySelectorAll('.exped.exped-left')].forEach( node => {
+      if(node.className === 'exped exped-left'){
+        const stage = node.getAttribute('data-expereience-stage');
+        node.style.width = getLanguagePct(stage) + '%';
+      }
+
+      if(node.className === 'exped exped-left skill'){
+        const stage = node.getAttribute('data-expereience-stage');
+        node.style.width = getPct(stage) + '%';
+      }
+    });
+
+    [...document.querySelectorAll('.exped.exped-right')].forEach( node => {
+      const stage = node.getAttribute('data-expereience-stage');
+      node.style.width = getPct(stage) + '%';
+    });
+
+  }
   
   const observer = new IntersectionObserver( entries => {
     entries
       .filter( entry => entry.isIntersecting)
       .forEach( observerEntry => {
-        console.log(observerEntry.target.className)
-
-
-
-        
         if(observerEntry.target.className === 'exped exped-left'){
           if(observerEntry.target.style.width === '0%'){
             const stage = observerEntry.target.getAttribute('data-expereience-stage');
