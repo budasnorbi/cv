@@ -372,27 +372,25 @@ body {
 }
 .skill-list-desc-programing{
   width: 80%;
-  margin-left: 25px;
-  margin-top:22.5px;
+  margin-left: 35px;
   display: flex;
+  margin-bottom: 10px;
 }
 .skill-list-desc-programing li{
-  display: inline-block;
-  flex-basis: 19%;
   font-size: 14px;
   text-align: center;
   position: relative;
+  flex-basis: 19%;
 }
 
-.skill-list-desc-programing li::before{
+.skill-list-desc-programing li::after{
     content: '*';
     width: 5px;
     left: 50%;
     transform: translateX(-50%);
-    top: -14px;
+    bottom: -3px;
     height: 5px;
     border-radius: 50%;
-    /* background-color: black; */
     display: block;
     margin: 0 auto;
     position: absolute;
@@ -535,6 +533,12 @@ body {
 
 
 @media print {
+  .footer_text{
+    align-self: center;
+  }
+  .footer{
+    padding-top:6px;
+  }
   .left-box .skill-group{
     text-align-last: right;
     width:unset;
@@ -570,11 +574,17 @@ body {
   }
   .skill-list-desc-programing{
     margin:0;
-    margin-left:35px;
+    margin-right:35px;
     margin-top: 10px;
     width:unset;
   }
   .skill-list-desc-programing li{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    
+    text-align-last: center;
     font-size: 8pt;
     flex-basis: 20%;
   }

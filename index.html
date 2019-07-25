@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Budás Norbert - Önéletrajz</title>
+  <title>Budás Norbert - CV</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
@@ -18,7 +18,9 @@
 
     <div class="row" id="print-box">
       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <button type="button" class="print-cv">Print</button>
+        <a style="color:unset;text-decoration: none;" href="./Budás Norbert - CV.pdf">
+          <button type="button" class="print-cv">Print</button>
+        </a>
       </div>
     </div>
 
@@ -192,9 +194,7 @@
         <div class="left-box box-margin visible-print">
           <h3 class="box-title">PROJEKTEK</h3>
           <div class="projects-box">
-            <p>Led Room, Web Sraper, Plank Calculator, Element Manager, Temperature Sensor, Chrome Css Path selector
-              Extension, Minecraft Server Starter, World of Warcraft Npc scripts, Multi Screen Stream & Demand Video
-              Player</p>
+            <p>Music Led Room, Web Scraper, Plank Calculator, Element Manager, Chrome Css Path Selector Extension, Minecraft Server Starter, World of Warcraft Npc Scripts, Multi Screen Stream & Demand Video Player</p>
           </div>
         </div>
 
@@ -203,6 +203,13 @@
           <h3 class="box-title">EXPERIENCES</h3>
           <div>
             <h4 class="skill-group" style="margin-top:5px;">Front-End JavaScript</h4>
+            <ul class="skill-list-desc-programing">
+              <li>Expert <small>(recognized authority)</small></li>
+              <li>Advanced <small>(applied theory)</small></li>
+              <li>Intermediate <small>(practical application)</small></li>
+              <li>Novice <small>(limited experience)</small></li>
+              <li>Fundamental Awareness<small>(basic knowledge)</small></li>
+            </ul>
             <ul class="skill-list left-box">
               <li>
                 <div class="skill-item-content">
@@ -231,7 +238,7 @@
                     <div class="level-four"></div>
                   </div>
                 </div>
-                <img class="skill-item-icon" src="./images/redux.svg"/>
+                <img class="skill-item-icon" style="height: 20px; margin: 1px 0;" src="./images/redux.svg"/>
               </li>
               <li>    
                 <div class="skill-item-content">
@@ -246,34 +253,6 @@
                   </div>
                 </div>
                 <img class="skill-item-icon" src="./images/redux-saga.svg"/>
-              </li>
-              <li>
-                <div class="skill-item-content">
-                  Emotion (CSS in JS)
-                  <div class="exp_bar"></div>
-                  <div class="exped exped-left skill" style="width: 0%" data-expereience-stage="three"></div>
-                  <div class="skill-rate">
-                    <div class="level-one"></div>
-                    <div class="level-two"></div>
-                    <div class="level-three"></div>
-                    <div class="level-four"></div>
-                  </div>   
-                </div>
-                <img class="skill-item-icon" src="./images/emotion.png"/>
-              </li>
-              <li>
-                <div class="skill-item-content">
-                  Styled Components (CSS in JS)
-                  <div class="exp_bar"></div>
-                  <div class="exped exped-left skill" style="width: 0%" data-expereience-stage="three"></div>
-                  <div class="skill-rate">
-                    <div class="level-one"></div>
-                    <div class="level-two"></div>
-                    <div class="level-three"></div>
-                    <div class="level-four"></div>
-                  </div>
-                </div>
-                <img class="skill-item-icon" src="./images/styledcomponents.png"/>
               </li>
               <li>
                 <div class="skill-item-content">
@@ -297,6 +276,34 @@
       <div class="col-lg-6 col-md-5 border-left experienced_content visible-print">
         <div>
           <ul class="skill-list right-box">
+            <li>
+              <img class="skill-item-icon" src="./images/emotion.png"/>
+              <div class="skill-item-content">
+                Emotion (CSS in JS)
+                <div class="exp_bar"></div>
+                <div class="exped exped-right" style="width: 0%" data-expereience-stage="three"></div>
+                <div class="skill-rate">
+                  <div class="level-one"></div>
+                  <div class="level-two"></div>
+                  <div class="level-three"></div>
+                  <div class="level-four"></div>
+                </div>   
+              </div>
+            </li>
+            <li>
+              <img class="skill-item-icon" src="./images/styledcomponents.png"/>
+              <div class="skill-item-content">
+                Styled Components (CSS in JS)
+                <div class="exp_bar"></div>
+                <div class="exped exped-right" style="width: 0%" data-expereience-stage="three"></div>
+                <div class="skill-rate">
+                  <div class="level-one"></div>
+                  <div class="level-two"></div>
+                  <div class="level-three"></div>
+                  <div class="level-four"></div>
+                </div>
+              </div>
+            </li>
             <li>
                 <img class="skill-item-icon" src="./images/materialui.svg"/>
                 <div class="skill-item-content">
@@ -430,7 +437,7 @@
               </div>
             </li>
             <li>
-              <img class="skill-item-icon" src="./images/slim.png"/>
+              <img class="skill-item-icon" style="height:21px; margin:2px 0;" src="./images/slim.png"/>
               <div class="skill-item-content">
                 Slim
                 <div class="exp_bar"></div>
@@ -591,7 +598,7 @@
               </div>
             </li>
             <li>
-              <img class="skill-item-icon" src="./images/babel.svg"/>
+              <img class="skill-item-icon" style="margin: 7px 0;" src="./images/babel.svg"/>
               <div class="skill-item-content">
                 Babel
                 <div class="exp_bar"></div>
@@ -666,21 +673,13 @@
                   <div class="level-four"></div>
                 </div>
               </div>
-            </li>
+            </li>      
           </ul>
         </div>
 
-        <ul class="skill-list-desc-programing">
-          <li>Fundamental Awareness (basic knowledge)</li>
-          <li>Novice (limited experience)</li>
-          <li>Intermediate (practical application)</li>
-          <li>Advanced (applied theory)</li>
-          <li>Expert (recognized authority)</li>
-        </ul>
-
         <div class="row visible-print">
           <div class="col-lg-12 footer">
-            <h3 class="box-title" style="display: block; width: fit-content;">CONTACT</h3>
+            <h3 class="box-title" style="display: block; width: fit-content; margin-bottom: 6px;">CONTACT</h3>
               <div>
 
                 <div class="footer_item_box">
@@ -708,8 +707,18 @@
       <div class="col-lg-6 col-md-5 border-left experienced_content hidden-print">
         <h3 class="box-title">EXPERIENCES</h3>
         <!-- Front-End JavaScript -->
+
+
         <div>
           <h4 class="skill-group" style="margin-top:5px;">Front-End JavaScript</h4>
+          <ul class="skill-list-desc-programing">
+            <li>Fundamental Awareness (basic knowledge)</li>
+            <li>Novice (limited experience)</li>
+            <li>Intermediate (practical application)</li>
+            <li>Advanced (applied theory)</li>
+            <li>Expert (recognized authority)</li>
+          </ul>
+
           <ul class="skill-list right-box">
             <li>
               <img class="skill-item-icon" src="./images/react-logo.svg"/>
@@ -726,7 +735,7 @@
               </div>
             </li>
             <li>
-              <img class="skill-item-icon" src="./images/redux.svg"/>
+              <img class="skill-item-icon" style="height: 20px; margin: 1px 0;" src="./images/redux.svg"/>
               <div class="skill-item-content">
                 Redux
                 <div class="exp_bar"></div>
@@ -929,7 +938,7 @@
               </div>
             </li>
             <li>
-              <img class="skill-item-icon" src="./images/slim.png"/>
+              <img class="skill-item-icon" style="height:21px; margin:2px 0;" src="./images/slim.png"/>
               <div class="skill-item-content">
                 Slim
                 <div class="exp_bar"></div>
@@ -1090,7 +1099,7 @@
               </div>
             </li>
             <li>
-              <img class="skill-item-icon" src="./images/babel.svg"/>
+              <img class="skill-item-icon" style="margin: 7px 0;" src="./images/babel.svg"/>
               <div class="skill-item-content">
                 Babel
                 <div class="exp_bar"></div>
@@ -1169,13 +1178,6 @@
           </ul>
         </div>
 
-        <ul class="skill-list-desc-programing">
-          <li>Fundamental Awareness (basic knowledge)</li>
-          <li>Novice (limited experience)</li>
-          <li>Intermediate (practical application)</li>
-          <li>Advanced (applied theory)</li>
-          <li>Expert (recognized authority)</li>
-        </ul>
 
       </div>
 
