@@ -72,6 +72,7 @@ body {
 
 @page {
   size: A4;
+  margin-top: 20px;
 }
 
 .list li time, .list li strong{
@@ -539,6 +540,9 @@ body {
   .footer{
     padding-top:6px;
   }
+  .left-box{
+    margin-top:12px;
+  }
   .left-box .skill-group{
     text-align-last: right;
     width:unset;
@@ -699,6 +703,10 @@ body {
 
   .footer_item_box:not(:last-child){
     margin-right:12px;
+  }
+
+  .footer_item_box:last-child{
+    margin-top:8px;
   }
 
   .footer_text{
