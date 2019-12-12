@@ -144,6 +144,7 @@ body {
 .left-box {
   width: 80%;
   margin-left: auto;
+
 }
 
 
@@ -428,7 +429,7 @@ body {
 
 .skill-list > li {
   display:flex;
-  margin-top: 15px;
+  margin-top: 31px;
 }
 
 .skill-item-content{
@@ -541,7 +542,7 @@ body {
     padding-top:6px;
   }
   .left-box{
-    margin-top:12px;
+    margin-top:20px;
   }
   .left-box .skill-group{
     text-align-last: right;
@@ -559,7 +560,7 @@ body {
   }
 
   .left-box:not(:last-child){
-    margin-bottom:13px;
+    margin-bottom:54px;
   }
 
   .contact-box li{
@@ -578,7 +579,7 @@ body {
   }
   .skill-list-desc-programing{
     margin:0;
-    margin-right:35px;
+    margin-left:35px;
     margin-top: 10px;
     width:unset;
   }
@@ -675,10 +676,10 @@ body {
 
 
 @media print {
-  .skill-list li:not(:last-child){
-    margin:5.5px 0;
+  .skill-list li:not(:first-child){
+    margin:0;
+    margin-top:8px;
   }
-
 
   .footer{
     margin-left: 0;
@@ -697,25 +698,19 @@ body {
   }
 
   .footer_item_box{
+    flex-basis: 50%;
     display: flex;
-    margin:0;
-  }
-
-  .footer_item_box:not(:last-child){
-    margin-right:12px;
-  }
-
-  .footer_item_box:last-child{
-    margin-top:8px;
+    margin:10px 0;
   }
 
   .footer_text{
     font-size: 8pt;
     margin:0;
+    margin-left:10px;
   }
 
   .skill-group{
-    margin: 5px 0;
+    margin: 10px 0;
   }
 
   .level-one, .level-two, .level-three, .level-four, .level-five {
@@ -796,6 +791,7 @@ body {
     display:block;
     width: fit-content;
     margin-left: auto !important;
+    
   }
 
   .cv_author h1{
@@ -820,6 +816,8 @@ body {
   .box-title{
     margin:0;
     font-size: 12pt;
+    margin-bottom: 15px;
+    border-bottom: solid 1px black;
   }
 
   .skill-group{
@@ -840,7 +838,7 @@ body {
   }
 
   .skill-list > li{
-    margin-top:5px;
+    margin-top:15px;
   }
 
   .skill-item-content{
@@ -890,7 +888,8 @@ body {
     display: flex !important;
     justify-content: center;
     align-items: center;
-    padding: 5px 0;
+    
+    margin-bottom:20px;
   }
 
   .cv_img{
